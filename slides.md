@@ -1,11 +1,9 @@
-# Datatium - Data as material for contextually responsive design
-<!-- .slide: attribute="title" -->
+# Datatium<br/> Data as material for contextually responsive design
+<!-- .slide: class="title" -->
 
 K-Nights, November 15, 2014 <!-- .element: class="location" -->
 
-Andrew Fisher <!-- .element: class="author" -->
-
-@ajfisher <!-- .element: class="handle" -->
+Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
 Notes:
 Hi, my name's Andrew Fisher and I'm an interaction researcher.
@@ -47,7 +45,6 @@ back to the point where we started.
 
 ---
 
-### 
 <!-- .slide: data-background="#000000" -->
 
 Notes:
@@ -58,7 +55,11 @@ of us, not what we could conceive of coming next.
 
 ---
 
-### Forest
+### Losing focus on what matters
+<!-- .slide: data-background="/images/forest.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Jyrki Salmi](https://www.flickr.com/photos/salman2000/15103964698)
 
 Notes:
 And I actually worry that we're falling into the same trap again. I think we
@@ -70,6 +71,11 @@ couple of years but I worry we're too focussed on pixels.
 ---
 
 ### We focus too much on size
+<!-- .slide: data-background="/images/video_standards.svg" -->
+
+"Vector Video Standards8" by <!-- .element: class="attribution" -->
+[Jedi787plus](https://en.wikipedia.org/wiki/File:Vector_Video_Standards4.svg) 
+(Wikipedia) 
 
 Notes:
 Or rather we're too focussed on screens. Largely we're moving from "I'm designing
@@ -85,6 +91,10 @@ not on a desk in one fixed location. Context is important.
 ---
 
 ### Responsive design should be about me
+<!-- .slide: data-background="/images/man.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[jonrawlinson](http://www.flickr.com/photos/london/106913032)
 
 Notes:
 Responsive design at the moment is all about my device, not about me and what
@@ -309,6 +319,7 @@ applications.
 ---
 
 ### Device shapes behaviour
+<!-- .slide: data-background="/images/devices.jpg" -->
 
 Notes:
 This is the obvious place to start and where all of you are right now. The reality
@@ -324,6 +335,11 @@ some of the benefits of iOS and how you can still use all your usual google apps
 ---
 
 ### Time shapes behaviour
+<!-- .slide: data-background="/images/time.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Martina Photography](http://www.flickr.com/photos/martinaphotography/7482296868/sizes/l/)
+
 
 Notes:
 Next we can look at time. 
@@ -342,6 +358,7 @@ task focused.
 ---
 
 ### Location shapes behaviour
+<!-- .slide: data-background="/images/geography.jpg" -->
 
 Notes:
 We can also consider location - is the person moving or stationary? You can infer 
@@ -356,6 +373,10 @@ that the user may be in.
 ---
 
 ### Context shapes behaviour
+<!-- .slide: data-background="/images/train.jpg" data-state="pushdown" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Henry Stratford](http://www.flickr.com/photos/henry_stradford/5348910688/sizes/o/)
 
 Notes:
 If I visit a site on my phone at about 8am every morning through the week and 
@@ -496,6 +517,10 @@ just email will be good to watch.
 ---
 
 ### Designing for failure
+<!-- .slide: data-background="/images/surfer.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Aristocats Hat](http://www.flickr.com/photos/36821100@N04/3537999137/)
 
 Notes:
 we need to consider designing in methods to allow people to correct a mistake. 
@@ -534,7 +559,9 @@ to let the user take action to correct things if needed.
 
 ---
 
-### Designing a contextually responsive experience.
+### Designing a contextually responsive experience
+
+// sms
 
 Notes:
 Remember this? The SMS I got from Vodafone. If you were looking closely you
@@ -554,8 +581,8 @@ for a month. Indeed send a text message like this:
 
 ### A better text
 
-You just went over your monthly limit. Don't worry - anything you use within
-reason is on us until tomorrow when you reset.
+> "You just went over your monthly limit. Don't worry - anything you use within
+> reason is on us until tomorrow when you reset."
 
 Notes:
 Now that's a more interesting experience for the end user I think you'll agree.
@@ -580,15 +607,13 @@ and build up familiarity and make sure you learn from your fails.
 ---
 
 # Datatium - Data as material for contextually responsive design
-<!-- .slide: attribute="title" -->
+<!-- .slide: class="title" -->
 
 K-Nights, November 15, 2014 <!-- .element: class="location" -->
 
-Andrew Fisher <!-- .element: class="author" -->
+Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
-@ajfisher <!-- .element: class="handle" -->
-
-Slides: http://ajf.io/datatium <!-- .element: class="slides_link" -->
+Slides: http://ajf.io/datatium <!-- .element: class="slideslink" -->
 
 Notes:
 Thanks very much for listening. All my details are here, including the link to

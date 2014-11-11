@@ -35,17 +35,16 @@ body {
 .reveal h6 {
 	margin: $headingMargin;
 	color: $headingColor;
+    background-color: $headingBackgroundColor;
 
 	font-family: $headingFont;
 	line-height: $headingLineHeight;
 	letter-spacing: $headingLetterSpacing;
 
 	text-transform: $headingTextTransform;
-	text-shadow: $headingTextShadow;
 }
 
 .reveal h1 {
-	text-shadow: $heading1TextShadow;
 }
 
 
@@ -101,6 +100,51 @@ body {
 		box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 	}
 
+// headings
+
+.reveal h1 { font-size: 2.77em; padding: 0.3em; display:inline-block; width: 70%}
+.reveal h2 { font-size: 2.11em;	padding: 0.3em; display: inline-block;}
+.reveal h3 { font-size: 2.11em; padding: 0.3em;	display: inline-block;}
+
+// others
+.reveal .title p
+{
+    font-size: 1em; 
+    padding-left: 1em;
+}
+
+.reveal .location { 
+    color: $primaryRed;
+}
+
+.reveal p.attribution{
+    background-color: rgba(63,63,63,0.8);
+    font-size: 0.5em;
+    display: inline-block;
+    padding: 0.3em;
+    margin-left: 1em;
+    position: absolute;
+    top: 38em;
+    height: 1.4em;
+    transform-style: preserve-3d;
+    left: 0em;
+}
+
+.reveal ol, 
+.reveal ul {
+    display: block;
+    margin-left: 2em;
+    color: $primaryRed;
+}
+
+.reveal li {
+    color: $mainColor;
+}
+
+html.pushdown div.slide-background.present {
+//    background-position: top;
+//    transition: none !important;
+}
 
 /*********************************************
  * NAVIGATION CONTROLS
@@ -148,7 +192,7 @@ body {
  *********************************************/
 
 .reveal .progress {
-	background: rgba(0,0,0,0.2);
+	background: $backgroundColor;
 }
 	.reveal .progress span {
 		background: $linkColor;
@@ -159,12 +203,5 @@ body {
 		     -o-transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 		        transition: width 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
 	}
-
-/*********************************************
- * SLIDE NUMBER
- *********************************************/
-.reveal .slide-number {
-  color: $linkColor;
-}
 
 
