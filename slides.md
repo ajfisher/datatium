@@ -15,8 +15,8 @@ next 40 minutes.
 
 ### The web was always responsive
 
-![](/images/responsive_old.png) <!-- .element: width="55%" -->
-![](/images/responsive_old2.png) <!-- .element: width="29.2%" -->
+![](/images/responsive_old.png) <!-- .element: width="50%" -->
+![](/images/responsive_old2.png) <!-- .element: width="26.5%" -->
 
 Notes:
 What I find most interesting about responsive design is that the web actually
@@ -25,6 +25,10 @@ started fully responsive - fluidity was inherent in the way it was designed.
 ---
 
 ### Then we broke it 
+<!-- .slide: data-background="/images/tables.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Thomas Hawk](https://www.flickr.com/photos/thomashawk/12591515)
 
 Notes:
 But for 20 years after that though we basically systematically broke that inherent
@@ -34,6 +38,10 @@ we made things work due to the monoculture of first Netscape and then IE.
 ---
 
 ### Then we fixed it
+<!-- .slide: data-background="/images/responsive.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Antoine Lefeuvre](https://www.flickr.com/photos/69797234@N06/7203485148)
 
 Notes:
 Then mobile came along, and we spent a long time fixing stuff that was only
@@ -106,6 +114,8 @@ application is delivering to me.
 
 ## Datatium:
 
+Da
+
 Notes:
 To truly create interesting experiences. To truly take mobile from being just
 a small screen. To truly realise the idea of a web that is responsive, we need
@@ -168,7 +178,7 @@ responsive experience.
 
 ### Missing one piece
 
-// Voda text message
+![](/images/sms.png) <!-- .element: width="40%" -->
 
 Notes:
 Here's an example of an okay experience. This came from vodafone the other day
@@ -192,7 +202,8 @@ We'll return to this example later and I'll show you how to make it better.
 
 ---
 
-### Iron man
+### Contextual design in action
+<!-- .slide: data-background="/images/ironman.jpg" -->
 
 Avengers, 2012 - ©Marvel <!-- .element: class="attribution"-->
 
@@ -219,6 +230,10 @@ settle for this without the flying suit of armour and pulse cannons in my hand.
 ---
 
 ### Odd experiences
+<!-- .slide: data-background="/images/uncanny.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Joe Goldberg](https://www.flickr.com/photos/goldberg/216631278)
 
 Notes:
 But we're all designing responsively right? All of us now? Great. But I bet you
@@ -240,6 +255,10 @@ Good - a couple.
 ---
 
 ### Context shift
+<!-- .slide: data-background="/images/context_shift.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[CAFNR](https://www.flickr.com/photos/cafnr/14267599480)
 
 Notes:
 What you are noticing is the effect caused by context shift. Sometimes in our
@@ -254,7 +273,11 @@ requirements rather than simply device. Here's an example of this.
 
 ### Context drives requirements
 
-// anz go money
+![](/images/anz1.png) <!-- .element: width="26%" -->
+![](/images/anz2.png) <!-- .element: width="26%" -->
+![](/images/anz3.png) <!-- .element: width="26%" -->
+
+ANZ GoMoney <!-- .element: class="attribution" -->
 
 Notes:
 I've been told anecdotally that when ANZ came to build their GoMoney 
@@ -273,6 +296,9 @@ been paid and whether I have enough money to buy that new game or not.
 ---
 
 ### Is this a browser?
+<!-- .slide: data-background="/images/smartwatch.jpg" -->
+
+Galaxy Gear © Samsung <!-- .element: class="attribution" -->
 
 Notes:
 
@@ -304,6 +330,10 @@ around this.
 ---
 
 ### Getting useful data
+<!-- .slide: data-background="/images/data_capture.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Eric Fischer](https://www.flickr.com/photos/walkingsf/6238509140)
 
 Notes:
 The first thing to understand is that there's no magic variables. I can give 
@@ -388,6 +418,8 @@ from a static location.
 
 ### Time and device
 
+![](/images/mobile-use.jpg) <!-- .element: width="68%" -->
+
 Notes:
 Here you can see some data that was composed as an aggregate of visitation
 across many clients I work with. This is a few months old now but you can see
@@ -450,6 +482,10 @@ and the digital and response to failure.
 ---
 
 ### Understanding desire lines
+<!-- .slide: data-background="/images/desireline.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[webwetwork](https://www.flickr.com/photos/wetwebwork/2847766967/)
 
 Notes:
 A desire line is when you can see from someone's behaviour what they are trying
@@ -461,6 +497,10 @@ in a particular way that allows us to tune the experience for that.
 ---
 
 ### Surfacing content / features contextually
+<!-- .slide: data-background="/images/surface.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[masine](https://www.flickr.com/photos/masine/11583288243)
 
 Notes:
 If we understand a desire line properly then it means we can surface content
@@ -470,6 +510,8 @@ is probably the best example of this. Particularly to do with travel.
 ---
 
 ### Google Now
+
+![](/images/googlenow.png) <!-- .element: width="26%" -->
 
 Notes:
 Being able to show just as you need it the information
@@ -488,6 +530,10 @@ browser now too.
 ---
 
 ### Linking time and space
+<!-- .slide: data-background="/images/timeandplace.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Pabak Sarkar](https://www.flickr.com/photos/pabak/13677439224)
 
 Notes:
 Time and space go together almost always. It's rare I need to worry about my
@@ -501,6 +547,8 @@ someone is at.
 ---
 
 ### Inbox
+
+![](/images/inbox.png)
 
 Notes:
 Another good example of this is Google's Inbox. If you haven't used it yet
@@ -533,6 +581,8 @@ So in your design process you need to do two things.
 
 ### Be transparent
 
+![](/images/amazon.png)
+
 Notes:
 The first is to make it transparent to the user about WHY they are being provided 
 with the information you're providing them. Sometimes this can be hard to 
@@ -545,6 +595,8 @@ it's affecting what you're seeing.
 ---
 
 ### Capture failure data
+
+![](/images/facebook.png) 
 
 Notes:
 The second is allowing the user to correct things. 
@@ -561,7 +613,7 @@ to let the user take action to correct things if needed.
 
 ### Designing a contextually responsive experience
 
-// sms
+![](/images/sms.png) <!-- .element: width="40%" -->
 
 Notes:
 Remember this? The SMS I got from Vodafone. If you were looking closely you
