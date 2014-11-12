@@ -112,9 +112,7 @@ application is delivering to me.
 
 ---
 
-## Datatium:
-
-Da
+Da <!-- .element: class="datatium" -->
 
 Notes:
 To truly create interesting experiences. To truly take mobile from being just
@@ -161,9 +159,9 @@ experience you're creating.
 
 ### A multitude of factors
 
-* Explicit data (What do I tell you)
-* Implicit data (How do I behave)
-* Extrinisic factors (What can you infer)
+* Explicit data (what do I tell you?)
+* Implicit data (how do I behave?)
+* Extrinisic factors (what can you infer?)
 
 Notes:
 Contextual design uses a combination of explicit information - what they've told
@@ -315,7 +313,7 @@ more embedded into our environments and gets closer to our bodies.
 
 ---
 
-## Datatium - data as material
+## Data as material
 
 Notes:
 Now you have a bit more of an understanding about what I mean when I talk about
@@ -419,6 +417,8 @@ from a static location.
 ### Time and device
 
 ![](/images/mobile-use.jpg) <!-- .element: width="68%" -->
+
+Device class-time of day meta-analysis <!-- .element: class="attribution" -->
 
 Notes:
 Here you can see some data that was composed as an aggregate of visitation
@@ -631,7 +631,7 @@ for a month. Indeed send a text message like this:
 
 ---
 
-### A better text
+### A better message
 
 > "You just went over your monthly limit. Don't worry - anything you use within
 > reason is on us until tomorrow when you reset."
