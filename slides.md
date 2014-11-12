@@ -675,7 +675,7 @@ K-Nights, November 15, 2014 <!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
-Slides: http://ajf.io/datatium <!-- .element: class="slideslink" -->
+Slides: http://datatium.ajf.io/ <!-- .element: class="slideslink" -->
 
 Notes:
 Thanks very much for listening. All my details are here, including the link to
