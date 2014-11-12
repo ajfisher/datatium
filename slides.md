@@ -203,7 +203,7 @@ We'll return to this example later and I'll show you how to make it better.
 ---
 
 ### Contextual design in action
-<!-- .slide: data-background-video="/images/battery.webm" -->
+<!-- .slide: data-background="/images/ironman.jpg" -->
 
 Avengers, 2012 - ©Marvel <!-- .element: class="attribution"-->
 
@@ -213,6 +213,14 @@ how seamless it can be from an experience perspective.
 
 Here's a clip from the first avenger's movie.
 
+---
+
+### Contextual design in action
+<!-- .slide: data-background="/images/ironman.gif" -->
+
+Avengers, 2012 - ©Marvel <!-- .element: class="attribution"-->
+
+Notes:
 Notice here how the HUD changes from a general display on what's going on to 
 full threat tactical display in a heartbeat. Stark doesn't activate it at all 
 and it becomes perfectly tuned to the tactical situation around him, responding 
