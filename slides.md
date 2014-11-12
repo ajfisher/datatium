@@ -112,6 +112,8 @@ application is delivering to me.
 
 ---
 
+### Datatium
+
 Da <!-- .element: class="datatium" -->
 
 Notes:
@@ -201,7 +203,7 @@ We'll return to this example later and I'll show you how to make it better.
 ---
 
 ### Contextual design in action
-<!-- .slide: data-background="/images/ironman.jpg" -->
+<!-- .slide: data-background-video="/images/battery.webm" -->
 
 Avengers, 2012 - ©Marvel <!-- .element: class="attribution"-->
 
