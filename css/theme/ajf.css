@@ -126,6 +126,11 @@ body {
   transform-style: preserve-3d;
   left: 0em; }
 
+.reveal p.help {
+  color: #8b8b8b;
+  font-size: 0.6em;
+  margin-left: 0.65em; }
+
 .reveal ol,
 .reveal ul {
   display: block;

@@ -5,6 +5,8 @@ K-Nights, November 15, 2014 <!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
+Hit 's' for speaker notes <!-- .element: class="help" -->
+
 Notes:
 Hi, my name's Andrew Fisher and I'm an interaction researcher.
 
@@ -54,6 +56,8 @@ back to the point where we started.
 ---
 
 <!-- .slide: data-background="#000000" -->
+
+Continue on, we come back to the light soon <!-- .element: class="help" -->
 
 Notes:
 That's me being a little ungenerous obviously, because we do have a better

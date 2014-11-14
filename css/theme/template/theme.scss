@@ -126,6 +126,13 @@ body {
     left: 0em;
 }
 
+.reveal p.help {
+    color: lighten($backgroundColor, 30%);
+    font-size: 0.6em;
+    margin-left: 0.65em;
+}
+
+
 .reveal ol, 
 .reveal ul {
     display: block;
