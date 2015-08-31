@@ -7,7 +7,6 @@ Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
 
 Notes:
-Hit 's' for speaker notes -- .element: class="help" --
 
 Hi, my name's Andrew Fisher and I'm an interaction researcher.
 
@@ -58,13 +57,20 @@ back to the point where we started.
 
 <!-- .slide: data-background="#000000" -->
 
-Continue on, we come back to the light soon <!-- .element: class="help" -->
-
 Notes:
 That's me being a little ungenerous obviously, because we do have a better
 platform for design than we had 20 years ago, but I think you all appreciate the
 point - we broke things due to our focus on execution for what was in front
 of us, not what we could conceive of coming next.
+
+In the last couple of months we've probably transitioned past the point of no 
+return on mobile though we're not quite sure if we're there or not. More traffic
+is now coming from mobile web than desktop web and if it hasn't quite made it 
+yet then we are damned close. 
+
+Basically if you don't have mobile in your business then your competitors are
+going to destroy you. There's no point even coming up with a strategy now as it's
+all over but the receievership.
 
 ---
 
@@ -75,11 +81,11 @@ of us, not what we could conceive of coming next.
 [Jyrki Salmi](https://www.flickr.com/photos/salman2000/15103964698)
 
 Notes:
-And I actually worry that we're falling into the same trap again. I think we
-are missing the wood for the trees.
 
-I think we've made some fantastic technical and design achievements in the last
-couple of years but I worry we're too focussed on pixels.
+However even if you are fully mobile and you've done a good job I think many 
+organisations have missed the point. Again we've focussed on what was in
+front of us and not thought about what we're doing and we've missed the woods
+for the trees.
 
 ---
 
@@ -91,15 +97,52 @@ couple of years but I worry we're too focussed on pixels.
 (Wikipedia) 
 
 Notes:
-Or rather we're too focussed on screens. Largely we're moving from "I'm designing
-this for an iPhone and a desktop" - towards "I'm designing this
-for a small device or a large screen". Mostly this is due to device fragmentation that
-leads us to having this many and more screen sizes - 
 
-That's awesome and all but we're missing the underlying behaviour. These devices
-are allowing computation to move to different contexts and we are changing our
-behvaiour as a result. Yes it may be a small screen but it's a small screen
-not on a desk in one fixed location. Context is important.
+I'd like to think we're largely through the size debates and we're now in the mode
+of "I'm designing for a small screen or a large screen". But we're also still
+a bit stuck in the "look, see how this all reflows, see - it works".
+
+That's awesome and all but we're still missing the underlying behaviour going
+on here. These devices have allowing computation to move to different contexts 
+and we are changing our behaviour as a result. 
+
+---
+
+
+Notes:
+
+Yes it may be a small screen but it's a small screen that is not on a desk 
+that is in one fixed location. It's a small screen attached to an incredible
+computer that can access just about any information in the world within a
+few seconds and a few taps on the screen. It's also a small screen that we can
+put away and pull out at a moment's notice.
+
+With the trasition to mobile web overtaking desktop web the predominate interaction
+method is now touch, it could be voice and it sure as hell isn't sitting down
+with a keyboard and mouse. We have moved from sit down computing to wherever
+you are computing and that's very very different.
+
+
+---
+
+### The dirty secret of mobile
+
+Slide here on conversions per session
+
+Conversion meta analysis <!-- .element: class="attribution" -->
+[Zhan / Fisher, JBA](http://jbadigital.com)
+
+Notes:
+
+And this is the thing that we as an industry have missed and it's already hurting
+and will hurt even more. Take a look at this. This is some aggregated data I pulled
+together which looks at conversion rates by device class. Mobile underperforms
+consistently on every single client. Even the best in mobile only just approach 
+what would be considered "below" average on desktop.
+
+I've seen data from adobe that looked at every analytics client they have and
+their numbers are the same (and what spurred me to look at ours). Mobile traffic
+is going up yet ability to turn them into actual outcomes is terrible.
 
 ---
 
@@ -113,7 +156,7 @@ Notes:
 Responsive design at the moment is all about my device, not about me and what
 I want. We spend more time reacting to whether I have a mobile and what 
 orientation I'm holding it than we do thinking about the service the web
-application is delivering to me.
+application is delivering to me and the context I'm in when I'm using it.
 
 ---
 
