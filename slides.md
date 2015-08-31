@@ -1,13 +1,14 @@
 # Datatium<br/> Data as material for contextually responsive design
 <!-- .slide: class="title" -->
 
-K-Nights, November 15, 2014 <!-- .element: class="location" -->
+Be Responsive, September 8, 2015 <!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
-Hit 's' for speaker notes <!-- .element: class="help" -->
 
 Notes:
+Hit 's' for speaker notes -- .element: class="help" --
+
 Hi, my name's Andrew Fisher and I'm an interaction researcher.
 
 Tonight I'd like to talk to you about data as a design material for the 
@@ -308,9 +309,9 @@ been paid and whether I have enough money to buy that new game or not.
 ---
 
 ### Is this a browser?
-<!-- .slide: data-background="/images/smartwatch.jpg" -->
+<!-- .slide: data-background="/images/apple-watch.jpg" -->
 
-Galaxy Gear © Samsung <!-- .element: class="attribution" -->
+Apple watch © Apple  <!-- .element: class="attribution" -->
 
 Notes:
 
@@ -525,7 +526,7 @@ is probably the best example of this. Particularly to do with travel.
 
 ### Google Now
 
-![](/images/googlenow.png) <!-- .element: width="26%" -->
+![](/images/googleinbox.png) <!-- .element: width="" -->
 
 Notes:
 Being able to show just as you need it the information
@@ -675,7 +676,7 @@ and build up familiarity and make sure you learn from your fails.
 # Datatium - Data as material for contextually responsive design
 <!-- .slide: class="title" -->
 
-K-Nights, November 15, 2014 <!-- .element: class="location" -->
+Be Responsive, 8 September, 2015 <!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
