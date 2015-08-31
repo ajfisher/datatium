@@ -1,7 +1,9 @@
 /* global module:false */
 module.exports = function(grunt) {
 	var port = grunt.option('port') || 8000;
-	// Project configuration
+	var base = grunt.option('base') || '.';
+	
+    // Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		meta: {
@@ -58,7 +60,9 @@ module.exports = function(grunt) {
 					head: false,
 					module: false,
 					console: false,
-					unescape: false
+					unescape: false,
+					define: false,
+					exports: false
 				}
 			},
 			files: [ 'Gruntfile.js', 'js/reveal.js' ]
@@ -68,7 +72,9 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					port: port,
-					base: '.'
+					base: base,
+					livereload: true,
+					open: true
 				}
 			}
 		},
