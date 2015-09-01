@@ -108,6 +108,11 @@ and we are changing our behaviour as a result.
 
 ---
 
+### New forms of computing
+<!-- .slide: data-background="/images/sofa_computing.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Yacine Petitprez](https://www.flickr.com/photos/anykeyh/15607697348/)
 
 Notes:
 
@@ -405,7 +410,10 @@ applications.
 ---
 
 ### Device shapes behaviour
-<!-- .slide: data-background="/images/devices.jpg" -->
+<!-- .slide: data-background="/images/device.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Japanexperterna.se](https://www.flickr.com/photos/68532869@N08/17470913285/)
 
 Notes:
 This is the obvious place to start and where all of you are right now. The reality
@@ -417,6 +425,7 @@ device and infer whether you might be looking to upgrade.
 
 Similarly if you're an android user on the iPhone microsite at Apple you could highlight
 some of the benefits of iOS and how you can still use all your usual google apps.
+
 
 ---
 
@@ -459,10 +468,10 @@ that the user may be in.
 ---
 
 ### Context shapes behaviour
-<!-- .slide: data-background="/images/train.jpg" data-state="pushdown" -->
+<!-- .slide: data-background="/images/subway.jpg" data-state="pushdown" -->
 
 (CC) Flickr <!-- .element: class="attribution" -->
-[Henry Stratford](http://www.flickr.com/photos/henry_stradford/5348910688/sizes/o/)
+[Nana B Agyei](https://www.flickr.com/photos/nanagyei/9265655720/)
 
 Notes:
 If I visit a site on my phone at about 8am every morning through the week and 
