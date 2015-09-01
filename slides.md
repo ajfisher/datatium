@@ -5,7 +5,6 @@ Be Responsive, September 8, 2015 <!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
-
 Notes:
 
 Hi, my name's Andrew Fisher and I'm an interaction researcher.
@@ -33,9 +32,9 @@ started fully responsive - fluidity was inherent in the way it was designed.
 [Thomas Hawk](https://www.flickr.com/photos/thomashawk/12591515)
 
 Notes:
-But for 20 years after that though we basically systematically broke that inherent
+But for 20 years after that we basically systematically broke that inherent
 responsiveness - mostly because of table based design but generally because
-we made things work due to the monoculture of first Netscape and then IE.
+we made things work for the monocultureis of the day - first Netscape and then IE.
 
 ---
 
@@ -47,21 +46,23 @@ we made things work due to the monoculture of first Netscape and then IE.
 
 Notes:
 Then mobile came along, and we spent a long time fixing stuff that was only
-really broken because we stuffed it in the first place and over the last 18 months
+really broken because we stuffed it in the first place and over the last 2 years
 we have all become converts to the idea of responsive design.
 
 So the sum total of our last 20 years of effort has been to largely bring us
-back to the point where we started.
+back to the point where we started, albeit with better typography and fewer
+beavers in hardhats weilding shovels.
 
 ---
 
 <!-- .slide: data-background="#000000" -->
 
 Notes:
+
 That's me being a little ungenerous obviously, because we do have a better
 platform for design than we had 20 years ago, but I think you all appreciate the
 point - we broke things due to our focus on execution for what was in front
-of us, not what we could conceive of coming next.
+of us, and didn't think of what was coming next.
 
 In the last couple of months we've probably transitioned past the point of no 
 return on mobile though we're not quite sure if we're there or not. More traffic
@@ -69,8 +70,9 @@ is now coming from mobile web than desktop web and if it hasn't quite made it
 yet then we are damned close. 
 
 Basically if you don't have mobile in your business then your competitors are
-going to destroy you. There's no point even coming up with a strategy now as it's
-all over but the receievership.
+going to destroy you. There's no point even coming up with a strategy for going
+mobile - that battle is lost. It's just a question of how bad that's going to
+be for you.
 
 ---
 
@@ -83,13 +85,12 @@ all over but the receievership.
 Notes:
 
 However even if you are fully mobile and you've done a good job I think many 
-organisations have missed the point. Again we've focussed on what was in
-front of us and not thought about what we're doing and we've missed the woods
-for the trees.
+organisations have missed a critical point. Again we've focussed on what was in
+front of us and not thought about what we're doing.
 
 ---
 
-### We focus too much on size
+### We're still (mostly) obsessed with size
 <!-- .slide: data-background="/images/video_standards.svg" -->
 
 "Vector Video Standards8" by <!-- .element: class="attribution" -->
@@ -103,8 +104,8 @@ of "I'm designing for a small screen or a large screen". But we're also still
 a bit stuck in the "look, see how this all reflows, see - it works".
 
 That's awesome and all but we're still missing the underlying behaviour going
-on here. These devices have allowing computation to move to different contexts 
-and we are changing our behaviour as a result. 
+on here. These devices have allowed computation to move to different contexts 
+and as humans we are changing our behaviour as a result of this.
 
 ---
 
@@ -116,16 +117,18 @@ and we are changing our behaviour as a result.
 
 Notes:
 
-Yes it may be a small screen but it's a small screen that is not on a desk 
-that is in one fixed location. It's a small screen attached to an incredible
+Yes, a phone may be a small screen but it's a small screen that is not on a desk 
+in a fixed location. It's a small screen attached to an incredible
 computer that can access just about any information in the world within a
-few seconds and a few taps on the screen. It's also a small screen that we can
+few seconds and a taps on the screen. It's also a small screen that we can
 put away and pull out at a moment's notice.
 
 With the trasition to mobile web overtaking desktop web the predominate interaction
-method is now touch, it could be voice and it sure as hell isn't sitting down
-with a keyboard and mouse. We have moved from sit down computing to wherever
-you are computing and that's very very different.
+method is now touch, it could easily also be voice but it sure as hell isn't sitting down
+with a keyboard and mouse any more. 
+
+We have moved from sit down computing to wherever you are computing and that's 
+very very different.
 
 
 ---
@@ -147,7 +150,7 @@ what would be considered "below" average on desktop.
 
 I've seen data from adobe that looked at every analytics client they have and
 their numbers are the same (and what spurred me to look at ours). Mobile traffic
-is going up yet ability to turn them into actual outcomes is terrible.
+is going up yet ability to turn them into actual outcomes is poor.
 
 ---
 
@@ -158,9 +161,11 @@ is going up yet ability to turn them into actual outcomes is terrible.
 [jonrawlinson](http://www.flickr.com/photos/london/106913032)
 
 Notes:
-Responsive design at the moment is all about my device, not about me and what
+
+Responsive design is still all about my device, not about me and what
 I want. We spend more time reacting to whether I have a mobile and what 
-orientation I'm holding it than we do thinking about the service the web
+orientation I'm holding it or what fancy new framework is in fashion this month
+that I can use to build it than we do thinking about the service the web
 application is delivering to me and the context I'm in when I'm using it.
 
 ---
@@ -171,7 +176,7 @@ Da <!-- .element: class="datatium" -->
 
 Notes:
 To truly create interesting experiences. To truly take mobile from being just
-a small screen. To truly realise the idea of a web that is responsive, we need
+a different screen. To truly realise the idea of a web that is responsive, we need
 to think beyond pixels and start thinking about context.
 
 Tonight, I want to talk to you about contextually responsive design and how
@@ -258,7 +263,7 @@ We'll return to this example later and I'll show you how to make it better.
 ### Contextual design in action
 <!-- .slide: data-background="/images/ironman.jpg" -->
 
-Avengers, 2012 - ©Marvel <!-- .element: class="attribution"-->
+Avengers, 2012 - © Marvel <!-- .element: class="attribution"-->
 
 Notes:
 So here's what a contextually responsive experience looks like in my opinion and
@@ -271,7 +276,7 @@ Here's a clip from the first avenger's movie.
 ### Contextual design in action
 <!-- .slide: data-background="/images/ironman.gif" -->
 
-Avengers, 2012 - ©Marvel <!-- .element: class="attribution"-->
+Avengers, 2012 - © Marvel <!-- .element: class="attribution"-->
 
 Notes:
 Notice here how the HUD changes from a general display on what's going on to 
@@ -297,8 +302,8 @@ settle for this without the flying suit of armour and pulse cannons in my hand.
 [Joe Goldberg](https://www.flickr.com/photos/goldberg/216631278)
 
 Notes:
-But we're all designing responsively right? All of us now? Great. But I bet you
-still come up against some issues.
+In a forum like this everyone would be practicing the core responsive design
+techniques. But I bet you're still coming across issues.
 
 Here's the situation. You design a wonderfully responsive site. Your media 
 queries are perfection, everything reflows beautifully - it's a work of responsive
@@ -377,6 +382,10 @@ more embedded into our environments and gets closer to our bodies.
 ---
 
 ## Data as material
+<!-- .slide: data-background="/images/data_material.jpg" -->
+
+(CC) Flickr <!-- .element: class="attribution" -->
+[Marcin Ignac](https://www.flickr.com/photos/marcinignac/7211176930/)
 
 Notes:
 Now you have a bit more of an understanding about what I mean when I talk about
@@ -615,7 +624,7 @@ someone is at.
 
 ### Inbox
 
-![](/images/inbox.png)
+![](/images/inbox2.png)
 
 Notes:
 Another good example of this is Google's Inbox. If you haven't used it yet
