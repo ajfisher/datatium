@@ -16,7 +16,6 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/ajf.css" id="theme">
-
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -52,7 +51,7 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
+        <script src="js/d3.min.js"></script>
 		<script>
 
 			// Full list of configuration options available here:
@@ -78,7 +77,14 @@
 				]
 			});
 
+            Reveal.addEventListener('ready', function(evt) {
+                console.log("good to go");
+                barChart();
+                hour_session_chart();
+            });
 		</script>
+
+        <script src="data/data.js"></script>
 
 	</body>
 </html>

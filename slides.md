@@ -135,7 +135,7 @@ very very different.
 
 ### The dirty secret of mobile
 
-Slide here on conversions per session
+<svg class="chart"></svg>
 
 Conversion meta analysis <!-- .element: class="attribution" -->
 [Zhan / Fisher, JBA](http://jbadigital.com)
@@ -492,7 +492,7 @@ from a static location.
 
 ### Time and device
 
-![](/images/mobile-use.jpg) <!-- .element: width="68%" -->
+<svg class="timedevice"></svg>
 
 Device class-time of day meta-analysis <!-- .element: class="attribution" -->
 

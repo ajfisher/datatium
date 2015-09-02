@@ -358,7 +358,7 @@ body {
   left: 0em; }
 
 .reveal p.help {
-  color: #8b8b8b;
+  color: #8c8c8c;
   font-size: 0.6em;
   margin-left: 0.65em; }
 
@@ -421,5 +421,44 @@ p.bigtext {
   margin: 0.4em auto;
   padding: 0.5em;
   width: 18%; }
+
+/** Chart themes **/
+.chart rect {
+  fill: #86d7ac; }
+
+.future .chart rect {
+  width: 0; }
+
+.present .chart rect {
+  transition: width 1.8s ease; }
+
+.chart text {
+  fill: rgba(26, 26, 26, 0.85);
+  font: 0.8em "League Gothic";
+  text-anchor: end; }
+
+.future .chart text {
+  opacity: 0; }
+
+.present .chart text {
+  opacity: 1;
+  transition: opacity 1s linear 1.5s; }
+
+.timedevice {
+  border: 1px solid green; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges; }
+
+.x.axis path {
+  /**display: none;**/ }
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px; }
 
 /*# sourceMappingURL=ajf.css.map */
