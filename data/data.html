@@ -2,21 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <style>
-            .chart rect {
-              fill: #63b6db;
-            }
-
-            .chart text {
-              fill: white;
-              font: 10px sans-serif;
-              text-anchor: end;
-            }
-
-            text {
-              font: 10px sans-serif;
-            }
-        </style>
+		<link rel="stylesheet" href="../css/theme/ajf.css">
 </head>
 <body>
                     <svg class="timedevice"></svg>
@@ -33,10 +19,11 @@
     var color = d3.scale.category10();
 
     var x = d3.scale.linear()
-        .range([0, width-20])
-        .domain([0, 23]);
+        .range([0, width-20]);
+//        .domain([0, 23]);
     var y = d3.scale.linear()
-        .range([height, 0]);
+        .range([height-20, 0]);
+//        .domain([0, 200000]);
 
 
     var chart = d3.select(".timedevice")
@@ -47,14 +34,11 @@
             .scale(x)
             //.orient("bottom");
 
-        chart.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(10," + (height-20) + ")")
-            .call(xAxis);
        
     var line = d3.svg.line()
-        .x(function(d) { console.log( x(d.Hour)); return x(d.Hour); })
-        .y(function(d) { console.log( y(d.Sessions)); return y(d.Sessions); })
+        .x(function(d) { return x(d.Hour); })
+        .y(function(d) {return y(d.Sessions); });
+        //.y(function(d) { console.log( y(d.Sessions)); return y(d.Sessions); })
 
 
         d3.csv("/data/hour_visitation.csv", function(data){ 
@@ -63,12 +47,23 @@
                 d.Sessions = parseInt(d.Sessions.replace(",", ""));
                 d.Hour = +d.Hour;
             });
+            
+            x.domain(d3.extent(data, function(d) { return d.Hour; }));
+            y.domain(d3.extent(data, function(d) { return d.Sessions; }));
 
-
+            console.log(x.domain());
             dataset = data;    
+
+            chart.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(10," + (height-20) + ")")
+                .call(xAxis);
+            
+            chart.append("path")
+                .datum(dataset)
+                .attr("class", "line")
+                .attr("d", line);
         });
-        
-        
-        </script>
+        </script>        
 </body>
 </html>
