@@ -358,7 +358,7 @@ body {
   left: 0em; }
 
 .reveal p.help {
-  color: #8c8c8c;
+  color: #8b8b8b;
   font-size: 0.6em;
   margin-left: 0.65em; }
 
@@ -433,7 +433,7 @@ p.bigtext {
   transition: width 1.8s ease; }
 
 .chart text {
-  fill: rgba(26, 26, 26, 0.85);
+  fill: rgba(255, 255, 255, 0.85);
   font: 0.8em "League Gothic";
   text-anchor: end; }
 
@@ -443,9 +443,6 @@ p.bigtext {
 .present .chart text {
   opacity: 1;
   transition: opacity 1s linear 1.5s; }
-
-.timedevice {
-  border: 1px solid green; }
 
 .axis path,
 .axis line {
@@ -458,7 +455,6 @@ p.bigtext {
 
 .line {
   fill: none;
-  stroke: steelblue;
   stroke-width: 1.5px; }
 
 /*# sourceMappingURL=ajf.css.map */

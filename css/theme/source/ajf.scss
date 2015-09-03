@@ -220,7 +220,7 @@ p.bigtext {
 }
 
 .chart text {
-    fill: darken($mainColor, 90%);
+    fill: $mainColor; //darken($mainColor, 90%);
     font: 0.8em "League Gothic";
     text-anchor: end;
 }
@@ -235,7 +235,6 @@ p.bigtext {
 }
 
 .timedevice {
-    border: 1px solid green;
 }
 
 .axis path,
@@ -251,6 +250,6 @@ p.bigtext {
 
 .line {
   fill: none;
-  stroke: steelblue;
+  //stroke: steelblue;
   stroke-width: 1.5px;
 }

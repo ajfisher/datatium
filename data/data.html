@@ -5,14 +5,14 @@
 		<link rel="stylesheet" href="../css/theme/ajf.css">
 </head>
 <body>
-                    <svg class="timedevice"></svg>
+                    <svg class="timedevice chart"></svg>
 
 
         <script src="../js/d3.min.js"></script>
         <script type="text/javascript">
 
     var width = 800;
-    var height = 300;
+    var height = 500;
 
     var dataset = null;
 
@@ -20,11 +20,10 @@
 
     var x = d3.scale.linear()
         .range([0, width-20]);
-//        .domain([0, 23]);
     var y = d3.scale.linear()
         .range([height-20, 0]);
-//        .domain([0, 200000]);
 
+    var deviceType = d3.scale.category10()
 
     var chart = d3.select(".timedevice")
         .attr("width", width)
@@ -32,13 +31,11 @@
 
         var xAxis = d3.svg.axis()
             .scale(x)
-            //.orient("bottom");
-
        
-    var line = d3.svg.line()
-        .x(function(d) { return x(d.Hour); })
-        .y(function(d) {return y(d.Sessions); });
-        //.y(function(d) { console.log( y(d.Sessions)); return y(d.Sessions); })
+        var line = d3.svg.line()
+            .x(function(d) { return x(d.Hour); })
+            .y(function(d) {return y(d.Sessions); })
+            .interpolate("basis");
 
 
         d3.csv("/data/hour_visitation.csv", function(data){ 
@@ -47,22 +44,51 @@
                 d.Sessions = parseInt(d.Sessions.replace(",", ""));
                 d.Hour = +d.Hour;
             });
-            
+
+            deviceType.domain(data.map(function(d) {return d.Device_type}));
+
+            dataset = data;
+
+            // take the raw data set and then create group by using the
+            // different keys
+            var structured_data = d3.nest()
+                .key(function(d){return d.Device_type})
+                .key(function(d){return d.Period})
+                .sortKeys(d3.ascending)
+                .entries(data)
+
+            var dts = deviceType.domain().map(function(key){
+                if (key != undefined) {
+                    return {
+                        name: key,
+                        values: dataset.filter(function(d){return d.Period == "All days"})
+                        .filter(function(d) { return d.Device_type == key }),
+                    }
+                }
+            });
+
             x.domain(d3.extent(data, function(d) { return d.Hour; }));
             y.domain(d3.extent(data, function(d) { return d.Sessions; }));
 
-            console.log(x.domain());
-            dataset = data;    
 
             chart.append("g")
                 .attr("class", "x axis")
                 .attr("transform", "translate(10," + (height-20) + ")")
                 .call(xAxis);
-            
-            chart.append("path")
-                .datum(dataset)
-                .attr("class", "line")
-                .attr("d", line);
+
+            dts.forEach(function(series) {
+                chart.append("path")
+                    .datum(series)
+                    .attr("class", "line")
+                    .attr("stroke", function(d) { return deviceType(d.name); })
+                    .attr("d", function(d) { return line(d.values); });
+
+                chart.append("text")
+                    .datum(function(d) { return {name: series.name, value: series.values[Math.round(series.values.length / 2)]}; })
+                    .attr("transform", function(d) {console.log(d); return "translate(" + x(d.value.Hour) + "," + y(d.value.Sessions) + ")"; })
+                    .attr("dy", "1.35em")
+                    .text(function(d) { return d.name; });
+            });
         });
         </script>        
 </body>
