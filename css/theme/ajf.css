@@ -358,7 +358,7 @@ body {
   left: 0em; }
 
 .reveal p.help {
-  color: #8b8b8b;
+  color: #8c8c8c;
   font-size: 0.6em;
   margin-left: 0.65em; }
 
@@ -423,38 +423,73 @@ p.bigtext {
   width: 18%; }
 
 /** Chart themes **/
-.chart rect {
-  fill: #86d7ac; }
-
-.future .chart rect {
-  width: 0; }
-
-.present .chart rect {
-  transition: width 1.8s ease; }
+.timedevice {
+  display: block;
+  margin-left: 0.3em; }
 
 .chart text {
   fill: rgba(255, 255, 255, 0.85);
   font: 0.8em "League Gothic";
   text-anchor: end; }
 
-.future .chart text {
-  opacity: 0; }
+.tick text {
+  font-size: 0.5em; }
 
-.present .chart text {
-  opacity: 1;
-  transition: opacity 1s linear 1.5s; }
+.chart text.series_title {
+  font-size: 1.0em;
+  text-anchor: middle; }
 
 .axis path,
 .axis line {
   fill: none;
-  stroke: #fff;
+  stroke: rgba(255, 255, 255, 0.85);
   shape-rendering: crispEdges; }
 
-.x.axis path {
-  /**display: none;**/ }
+.future path.line,
+.future .chart text,
+.future .axis line,
+.future .axis path {
+  opacity: 0; }
 
-.line {
+.present .axis path {
+  opacity: 1;
+  transition: opacity 1s ease 0.25s; }
+
+.present .axis line {
+  opacity: 1;
+  transition: opacity 1s ease 0.75s; }
+
+.present .chart .tick text {
+  opacity: 1;
+  transition: opacity 2s ease 1.5s; }
+
+.present path.line.mobile {
+  opacity: 1;
+  transition: opacity 3s ease 2s; }
+
+.present path.line.desktop {
+  opacity: 1;
+  transition: opacity 3s ease 1s; }
+
+.present path.line.tablet {
+  opacity: 1;
+  transition: opacity 2s ease 3s; }
+
+.present .chart text.series_title {
+  opacity: 1;
+  transition: opacity 1.5s ease 4s; }
+
+path.line {
   fill: none;
-  stroke-width: 1.5px; }
+  stroke-width: 2px; }
+
+.line.desktop {
+  stroke: #FF5E99; }
+
+.line.mobile {
+  stroke: #5EFFA9; }
+
+.line.tablet {
+  stroke: #EAFF5E; }
 
 /*# sourceMappingURL=ajf.css.map */

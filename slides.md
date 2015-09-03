@@ -492,7 +492,7 @@ from a static location.
 
 ### Time and device
 
-<svg class="timedevice"></svg>
+<svg class="timedevice chart"></svg>
 
 Device class-time of day meta-analysis <!-- .element: class="attribution" -->
 
