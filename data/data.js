@@ -1,26 +1,83 @@
-function barChart() {
-//------ code to show D3 Bar Chart on First Slide-------
-    var data = [44, 28, 15, 16, 23, 5];
-    var width = 800;
-    var barHeight = 32;
+function conversion_chart() {
+    // sets up conversion bar chart
+
+    var width = 1200;
+    var height = 400;
+    var margin = 15; // overall margin value
+    var axisBuffer = 130;
+    var valueBuffer = 100;
+    var barHeight = 100;
+
+    var dataset = null;
+    var temp = null;
+
     var x = d3.scale.linear()
-        .domain([0, d3.max(data)])
-        .range([0, width]);
-    var chart = d3.select(".chart")
+        .range([0, width-(2*margin)-axisBuffer-valueBuffer]);
+
+    var chart = d3.select(".conversions")
         .attr("width", width)
-        .attr("height", barHeight * data.length);
-    var bar = chart.selectAll("g")
-        .data(data)
-      .enter().append("g")
-        .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
-    bar.append("rect")
-        .attr("width", x)
-        .attr("height", barHeight - 5)
-    bar.append("text")
-        .attr("x", function(d) { return x(d) - 3; })
-        .attr("y", (barHeight-5) / 2)
-        .attr("dy", ".35em")
-        .text(function(d) { return d; });
+        .attr("height", height);
+
+    d3.csv("/data/conversion.csv", function(data){ 
+        
+        data.forEach(function(d) {
+            d.Sessions = parseFloat(d.Sessions);
+            d.Hour = +d.Hour;
+            d.Completions = parseFloat(d.Completions);
+            d.Conversions = parseFloat(d.Conversions);
+        });
+
+        // get the averages for each of the device types
+        var averages = d3.nest()
+            .key(function(d) {return d.Device_type })
+            .rollup(function (d) {
+                return {
+                    name: d.Device_type,
+                    average: d3.mean(d, function(g) {return g.Conversions}) 
+                }
+            }).entries(data)
+
+        dataset = data;
+        x.domain([0, d3.max(averages).values.average]);
+
+        var yAxis = chart.append("line")
+            .attr("x1", axisBuffer-(margin/2))
+            .attr("y1", 0)
+            .attr("x2", axisBuffer-(margin/2))
+            .attr("y2", function() { return (averages.length * barHeight) - 5 })
+            .attr("class", "axis");
+
+
+        var bar = chart.selectAll("g")
+            .data(averages)
+        .enter().append("g")
+            .attr("transform", function(d, i) { return "translate(" + axisBuffer + "," + i * barHeight + ")"; });
+
+        bar.append("rect")
+            .attr("width", function(d) {return x(d.values.average) })
+            .attr("height", barHeight - (margin/2))
+            .attr("class", function(d) {return d.key} )
+
+        // add çategory labels
+        bar.append("text")
+            .attr("class", "cat_title")
+            .attr("x", function(d) { return x(0); })
+            .attr("y", (barHeight-5) / 2)
+            .attr("dx", -margin)
+            .attr("dy", ".35em")
+            .text(function(d) { return d.key; });
+
+/**        // add % values
+        bar.append("text")
+            .attr("class", "marks")
+            .attr("x", function(d) {return x(d.values.average)})
+            .attr("y", (barHeight-5)/2)
+            .attr("dx", margin)
+            .attr("dy", ".35em")
+            .text(function(d) { return (d.values.average*100).toFixed(2) + "%" });
+**/
+
+    }); // load
 }
 
 function hour_session_chart() {

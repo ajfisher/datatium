@@ -133,9 +133,9 @@ very very different.
 
 ---
 
-### The dirty secret of mobile
+### Mobile's dirty secret
 
-<svg class="chart"></svg>
+<svg class="conversions chart"></svg>
 
 Conversion meta analysis <!-- .element: class="attribution" -->
 [Zhan / Fisher, JBA](http://jbadigital.com)

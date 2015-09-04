@@ -228,9 +228,17 @@ p.bigtext {
     font-size: 0.5em;
 }
 
+.conversions {
+    margin-top: 2em;
+}
+
 .conversions text {
-    font-size: 2.8em;
+    font-size: 1.2em;
     text-anchor: end;
+}
+
+.conversions text.marks {
+    text-anchor: start;
 }
 
 .chart text.series_title {
@@ -245,10 +253,18 @@ p.bigtext {
   shape-rendering: crispEdges;
 }
 
+line.axis {
+    stroke: $mainColor;
+    shape-rendering: crispEdges;
+    stroke-width: 1.5px;
+}
+
 .future path.line,
 .future .chart text,
+.future .chart text.cat_title,
 .future .axis line,
-.future .axis path {
+.future .axis path,
+.future line.axis {
     opacity: 0;
 }
 
@@ -257,7 +273,8 @@ p.bigtext {
     transition: opacity 1s ease 0.25s;
 }
 
-.present .axis line {
+.present .axis line,
+.present line.axis {
     opacity: 1;
     transition: opacity 1s ease 0.75s;
 }
@@ -284,6 +301,25 @@ p.bigtext {
     opacity: 1;
     transition: opacity 1.5s ease 4s;
 }
+
+.future .chart * rect {
+    width: 0;
+}
+
+.present .chart * rect.desktop {
+    transition: width 2s ease 1s;
+}
+.present .chart * rect.mobile {
+    transition: width 1s ease 1.5s;
+}
+.present .chart * rect.tablet {
+    transition: width 1.5s ease 0.75s;
+}
+
+.present .chart text.cat_title {
+    transition: opacity 1.5s ease 2s;
+}
+
 path.line {
   fill: none;
   stroke-width: 2px;
