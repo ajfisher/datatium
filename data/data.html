@@ -5,114 +5,81 @@
 		<link rel="stylesheet" href="../css/theme/ajf.css">
 </head>
 <body>
-                    <svg class="timedevice chart"></svg>
+                    <svg class="conversions chart"></svg>
 
 
         <script src="../js/d3.min.js"></script>
         <script type="text/javascript">
 
-    var width = 800;
-    var height = 500;
-    var margin = 10; // overall margin value
+    var width = 1200;
+    var height = 700;
+    var margin = 15; // overall margin value
+    var axisBuffer = 130;
+    var barHeight = 80;
 
     var dataset = null;
-
-    var color = d3.scale.category10();
+    var temp = null;
 
     var x = d3.scale.linear()
-        .range([margin, width-(2*margin)]);
-    var y = d3.scale.linear()
-        .range([height-(2*margin), margin]);
+        .range([0, width-(2*margin)-axisBuffer]);
 
     var deviceType = d3.scale.category10()
 
-    var chart = d3.select(".timedevice")
+    var chart = d3.select(".conversions")
         .attr("width", width)
         .attr("height", height);
 
-    var xAxis = d3.svg.axis()
-        .scale(x)
-        .ticks(24);
-   
-    var line = d3.svg.line()
-        .x(function(d) { return x(d.Hour); })
-        .y(function(d) {return y(d.session_pct); })
-        .interpolate("basis");
-
-
-    d3.csv("/data/hour_visitation.csv", function(data){ 
+    d3.csv("/data/conversion.csv", function(data){ 
         
         data.forEach(function(d) {
-            d.Sessions = parseInt(d.Sessions.replace(",", ""));
+            d.Sessions = parseFloat(d.Sessions);
             d.Hour = +d.Hour;
+            d.Completions = parseFloat(d.Completions);
+            d.Conversions = parseFloat(d.Conversions);
         });
 
         deviceType.domain(data.map(function(d) {return d.Device_type}));
 
+        // get the averages for each of the device types
 
-        // get the totals for each of the device types
-        var totals = {};
-
-        d3.nest()
-            .key(function(d){return d.Period})
-            .key(function(d){return d.Device_type})
-            .entries(data)
-            .filter(function(d) {return d.key == "All days"})[0]
-            .values.map(function(d) {
+        var averages = d3.nest()
+            .key(function(d) {return d.Device_type })
+            .rollup(function (d) {
                 return {
-                    name: d.key,
-                    total: d3.sum(d.values, function(g) {return g.Sessions}),
+                    name: d.Device_type,
+                    average: d3.mean(d, function(g) {return g.Conversions}) 
                 }
-            }).forEach(function(d) {
-                totals[d.name] = d.total;
-            });
-
-        // update the dataset in order to get the % of sessions for the series
-        data.forEach(function(d) {
-            d.session_pct = d.Sessions / totals[d.Device_type];
-        });
-
-        // get the data just for All Days and by the device types as entities
-        var dts = deviceType.domain().map(function(key){
-
-            if (key != undefined) {
-                return {
-                    name: key,
-                    values: data.filter(function(d){return d.Period == "All days"})
-                        .filter(function(d) { return d.Device_type == key }),
-                }
-            }
-        });
+            }).entries(data)
 
         dataset = data;
-        x.domain(d3.extent(data, function(d) { return d.Hour; }));
-        y.domain(d3.extent(data, function(d) { return d.session_pct; }));
+        x.domain([0, d3.max(averages).values.average]);
 
-        chart.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + (height-2*margin) + ")")
-            .call(xAxis);
+        var yAxis = chart.append("line")
+            .attr("x1", axisBuffer-5)
+            .attr("y1", 0)
+            .attr("x2", axisBuffer-5)
+            .attr("y2", function() { return (averages.length * barHeight) - 5 })
+            .attr("stroke", "white")
+            .attr("class", "axis");
 
-        // add the three series
-        dts.forEach(function(series) {
-            chart.append("path")
-                .datum(series)
-                .attr("class", function(d) { return ("line " + d.name); })
-                .attr("stroke", function(d) { return deviceType(d.name); })
-                .attr("d", function(d) { return line(d.values); });
 
-            chart.append("text")
-                .datum(function(d) { return {
-                    name: series.name, 
-                    value: series.values[Math.round(series.values.length / 2)]
-                }; })
-                .attr("transform", function(d) {
-                    return "translate(" + x(d.value.Hour) + "," + y(d.value.session_pct) + ")"; 
-                })
-                .attr("dy", "1.5em")
-                .attr("class", "series_title")
-                .text(function(d) { return d.name; });
-        });
+        var bar = chart.selectAll("g")
+            .data(averages)
+        .enter().append("g")
+            .attr("transform", function(d, i) { return "translate(" + axisBuffer + "," + i * barHeight + ")"; });
+
+        bar.append("rect")
+            .attr("width", function(d) {console.log (d); return x(d.values.average) })
+            .attr("height", barHeight - 5)
+            .attr("class", function(d) {return d.key} )
+
+        bar.append("text")
+            .attr("x", function(d) { return x(0); })
+            .attr("y", (barHeight-5) / 2)
+            .attr("dx", -margin)
+            .attr("dy", ".35em")
+            .text(function(d) { return d.key; });
+
     }); // load
         </script>        
 </body>

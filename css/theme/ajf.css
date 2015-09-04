@@ -358,7 +358,7 @@ body {
   left: 0em; }
 
 .reveal p.help {
-  color: #8c8c8c;
+  color: #8b8b8b;
   font-size: 0.6em;
   margin-left: 0.65em; }
 
@@ -435,6 +435,10 @@ p.bigtext {
 .tick text {
   font-size: 0.5em; }
 
+.conversions text {
+  font-size: 2.8em;
+  text-anchor: end; }
+
 .chart text.series_title {
   font-size: 1.0em;
   text-anchor: middle; }
@@ -486,10 +490,19 @@ path.line {
 .line.desktop {
   stroke: #FF5E99; }
 
+rect.desktop {
+  fill: #FF5E99; }
+
 .line.mobile {
   stroke: #5EFFA9; }
 
+rect.mobile {
+  fill: #5EFFA9; }
+
 .line.tablet {
   stroke: #EAFF5E; }
+
+rect.tablet {
+  fill: #EAFF5E; }
 
 /*# sourceMappingURL=ajf.css.map */

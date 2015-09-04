@@ -228,6 +228,11 @@ p.bigtext {
     font-size: 0.5em;
 }
 
+.conversions text {
+    font-size: 2.8em;
+    text-anchor: end;
+}
+
 .chart text.series_title {
     font-size: 1.0em;
     text-anchor: middle;
@@ -288,10 +293,22 @@ path.line {
     stroke: $base;
 }
 
+rect.desktop {
+    fill: $base;
+}
+
 .line.mobile {
     stroke: $highlight; //darken($primaryRed, 20%);
 }
 
+rect.mobile {
+    fill: $highlight;
+}
+
 .line.tablet {
     stroke: $accent; //darken($primaryRed, 40%);
+}
+
+rect.tablet {
+    fill: $accent;
 }
