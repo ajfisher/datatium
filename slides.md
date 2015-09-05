@@ -448,16 +448,9 @@ some of the benefits of iOS and how you can still use all your usual google apps
 Notes:
 Next we can look at time. 
 
-People do different things at different times of the day. 
-
-I did some research that looks at the types of activity you'd do over a day across
-many clients in many verticals and you see sales activities dominate in the afternoon
-and evening but service based actions dominate the morning activity.
-
-This makes sense in an aggregate way - most people have a tick list and topping up
-a phone, making a call to change a plan or organise a return are tasks you
-do to knock them off. Shopping is often not this type of behaviour as it's less
-task focused.
+People do different things at different times of the day. Your morning activities
+are very different than your evening ones. I'll show you some data relating to 
+this in a minute.
 
 ---
 
