@@ -488,6 +488,7 @@ from a static location.
 <svg class="timedevice chart"></svg>
 
 Device class-time of day meta-analysis <!-- .element: class="attribution" -->
+[Zhan / Fisher JBA](http://jbadigital.com)
 
 Notes:
 Here you can see some data that was composed as an aggregate of visitation
@@ -500,11 +501,6 @@ browses in bed before you get up? Okay so that's probably you.
 
 Likewise mobile and tablet go later into the day. Who sits in bed using a tablet
 more mobile before going to sleep? Okay so that's probably you up this end.
-
-You can see that mobile is now the bedrock of behaviour, mobile is used over
-the whole day, though a bit more in the evening during sofa time.
-
-Tablet has this double bump of morning then mega bump in the evening. 
 
 And you can obviously see this big drop off of desktop once you go outside of
 business hours.
