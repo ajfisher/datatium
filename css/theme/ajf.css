@@ -311,7 +311,7 @@ body {
 
 .reveal h1 {
   font-size: 2.77em;
-  margin-top: 0.8em;
+  margin-top: 0.5em;
   padding: 0.5em 0.3em;
   display: inline-block;
   width: 67%;
@@ -533,6 +533,9 @@ rect.mobile {
 
 rect.tablet {
   fill: #EAFF5E; }
+
+.reveal .download {
+  font-size: 0.5em; }
 
 body.print-pdf .reveal a.download {
   display: none; }

@@ -89,7 +89,7 @@ $primaryGrey: rgb(63,63,63);
 
 .reveal h1 { 
     font-size: $heading1Size; 
-    margin-top: 0.8em;
+    margin-top: 0.5em;
     padding: 0.5em 0.3em;
     display:inline-block; 
     width: 67%; 
@@ -351,6 +351,10 @@ rect.tablet {
     fill: $accent;
 }
 
+.reveal .download {
+    font-size: 0.5em;
+}
+
 // PRINT styles
 body.print-pdf .reveal a.download {
     display: none;
@@ -373,6 +377,7 @@ body.production .reveal aside.notes {
     top: 1.4em;
 }
 
+
 body.print-pdf h3,
 body.production h3{
     font-size: $printHeaderSize;
@@ -382,4 +387,5 @@ body.print-pdf h2,
 body.production h2 {
     font-size: $printHeaderSize;
 }
+
 

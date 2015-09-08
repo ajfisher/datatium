@@ -5,7 +5,8 @@ Be Responsive, September 8, 2015 <!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
-[Download slides](/Datatium - Using data as a material for contextually responsive design.pdf) <!-- .element: class="download" -->
+[Download slides (PDF 80MB)](/Datatium - Using data as a material for contextually responsive design.pdf) 
+ <!-- .element: class="download" -->
 
 Notes:
 
