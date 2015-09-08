@@ -52,6 +52,9 @@
 		<script src="js/reveal.js"></script>
         <script src="js/d3.min.js"></script>
 		<script>
+			if( window.location.search.match( /ajf/gi ) ) {
+                document.getElementsByTagName("body")[0].className = "production";
+            }
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
