@@ -59,20 +59,19 @@ beavers in hardhats weilding shovels.
 
 Notes:
 
-That's me being a little ungenerous obviously, because we do have a better
-platform for design than we had 20 years ago, but I think you all appreciate the
-point - we broke things due to our focus on execution for what was in front
-of us, and didn't think of what was coming next.
+That's me being a little disgenerous obviously, because we do have a better
+platform for design than we had 20 years ago - but the point is,
+we broke things due to our focus on execution for what was in front
+of us, and didn't think of what was coming next even when it was apparent.
 
-In the last couple of months we've probably transitioned past the point of no 
+So in the last couple of months we've probably transitioned past the point of no 
 return on mobile though we're not quite sure if we're there or not. More traffic
 is now coming from mobile web than desktop web and if it hasn't quite made it 
 yet then we are damned close. 
 
-Basically if you don't have mobile in your business then your competitors are
-going to destroy you. There's no point even coming up with a strategy for going
-mobile - that battle is lost. It's just a question of how bad that's going to
-be for you.
+Basically if you don't have mobile in your business now then it's to late. The
+question is really one of how bad it's going to be for you. With an audience
+like you all that's probably not a problem but it will be for others.
 
 ---
 
@@ -85,8 +84,8 @@ be for you.
 Notes:
 
 However even if you are fully mobile and you've done a good job I think many 
-organisations have missed a critical point. Again we've focussed on what was in
-front of us and not thought about what we're doing.
+organisations have missed a critical feature about what underpins what's happening
+in behaviour right now because we're a little fixated on screens.
 
 ---
 
@@ -99,13 +98,13 @@ front of us and not thought about what we're doing.
 
 Notes:
 
-I'd like to think we're largely through the size debates and we're now in the mode
-of "I'm designing for a small screen or a large screen". But we're also still
-a bit stuck in the "look, see how this all reflows, see - it works".
+I think we're largely through the size debates and should we support mobile 
+and we're now in the mode of "I'm designing for a small screen or a large screen". 
+But we're also still a bit stuck in the "look, see how this all reflows, see - it works".
 
-That's awesome and all but we're still missing the underlying behaviour going
-on here. These devices have allowed computation to move to different contexts 
-and as humans we are changing our behaviour as a result of this.
+That's awesome and all but we're missing the underlying behaviour going
+on here. These devices have allowed computation to move into different contexts 
+and as humans we are changing our behaviour as a result of this change in tech,
 
 ---
 
@@ -124,12 +123,11 @@ few seconds and a taps on the screen. It's also a small screen that we can
 put away and pull out at a moment's notice.
 
 With the trasition to mobile web overtaking desktop web the predominate interaction
-method is now touch, it could easily also be voice but it sure as hell isn't sitting down
-with a keyboard and mouse any more. 
+method is probably now touch, it could easily also be voice but it sure as 
+hell isn't sitting down with a keyboard and mouse any more. 
 
 We have moved from sit down computing to wherever you are computing and that's 
-very very different.
-
+very very different in terms of the behaviour it affords.
 
 ---
 
@@ -144,13 +142,19 @@ Notes:
 
 And this is the thing that we as an industry have missed and it's already hurting
 and will hurt even more. Take a look at this. This is some aggregated data I pulled
-together which looks at conversion rates by device class. Mobile underperforms
-consistently on every single client. Even the best in mobile only just approach 
+together which looks at normalised conversion rates by device class. 
+
+You can see how poorly mobile performs, only about 2/3 as well as desktop and 
+tablet isn't much better. Even the best in mobile only just approach 
 what would be considered "below" average on desktop.
 
 I've seen data from adobe that looked at every analytics client they have and
 their numbers are the same (and what spurred me to look at ours). Mobile traffic
-is going up yet ability to turn them into actual outcomes is poor.
+is going up yet ability to turn that traffic into actual outcomes is poor.
+
+Yes, you might have upped your conversion by 5 times from what it was on mobile
+but when the majority of your traffic comes from mobile and it's performing worse
+questions are going to be asked and I can tell you CEOs and CMOs memories are short.
 
 ---
 
@@ -165,8 +169,8 @@ Notes:
 Responsive design is still all about my device, not about me and what
 I want. We spend more time reacting to whether I have a mobile and what 
 orientation I'm holding it or what fancy new framework is in fashion this month
-that I can use to build it than we do thinking about the service the web
-application is delivering to me and the context I'm in when I'm using it.
+than we do thinking about the service the web application is delivering to me 
+and the context I'm in when I'm using it.
 
 ---
 
@@ -177,7 +181,7 @@ Da <!-- .element: class="datatium" -->
 Notes:
 To truly create interesting experiences. To truly take mobile from being just
 a different screen. To truly realise the idea of a web that is responsive, we need
-to think beyond pixels and start thinking about context.
+to think beyond pixels and start thinking about context and behaviour.
 
 Tonight, I want to talk to you about contextually responsive design and how
 data can be used to facilitate it. In my work I think about data as a material - 
@@ -239,7 +243,7 @@ responsive experience.
 ![](/images/sms.png) <!-- .element: width="40%" -->
 
 Notes:
-Here's an example of an okay experience. This came from vodafone the other day
+Here's an example of an okay experience. This came from vodafone
 warning me I was approaching my data limit and when it would start again. 
 There was one point of failure with it and the eagle-eyed amongst you may spot
 it.
@@ -253,6 +257,7 @@ expressed preference
 that threshold.
 
 This is the point the message gets sent. The missing part is the extrinsic factors
+
  - what else can be derived from knowledge about me or my behaviour is missing
 and is what turns this into only an okay experience rather than a great one.
 
@@ -303,16 +308,18 @@ settle for this without the flying suit of armour and pulse cannons in my hand.
 
 Notes:
 In a forum like this everyone would be practicing the core responsive design
-techniques. But I bet you're still coming across issues.
+techniques. But I bet you're still coming across some issues - probably more
+frequently now everything you're doing is inherently responsive.
 
-Here's the situation. You design a wonderfully responsive site. Your media 
-queries are perfection, everything reflows beautifully - it's a work of responsive
-art.
+Here's the situation. You design a wonderfully responsive site everything reflows 
+beautifully - it's a work of responsive art.
 
 But you then use the web application on mobile - or maybe you go from
 mobile to desktop - and something just "feels" wrong. You can't put your finger
 on it, but there's something odd about the experience when you move from one
 device to another.
+
+Instagram going from mobile to desktop feels like this - it's just not right. 
 
 Has anyone experienced this?
 
