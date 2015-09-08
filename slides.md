@@ -5,6 +5,8 @@ Be Responsive, September 8, 2015 <!-- .element: class="location" -->
 
 Andrew Fisher @ajfisher <!-- .element: class="author" -->
 
+[Download slides](/Datatium - Using data as a material for contextually responsive design.pdf) <!-- .element: class="download" -->
+
 Notes:
 
 Hi, my name's Andrew Fisher and I'm an interaction researcher.
@@ -56,6 +58,8 @@ beavers in hardhats weilding shovels.
 ---
 
 <!-- .slide: data-background="#000000" -->
+
+Continue on, we come back to the light soon <!-- .element class="help" -->
 
 Notes:
 
